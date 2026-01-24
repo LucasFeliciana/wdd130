@@ -83,7 +83,7 @@ h1 {
     color: #e5dd46;
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 5px;
     left: 1px;
@@ -100,6 +100,5 @@ article {
     width: 125px;
     height: 125px;
     margin: 0 0 0 0;
-    border: #00000075 groove;
-    box-shadow: #000000f9;
+    border: #00000075 solid;
 }

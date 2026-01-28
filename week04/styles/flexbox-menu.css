@@ -17,6 +17,10 @@ nav ul {
     align-items: center;
 }
 
+nav li {
+    flex: 1 1 auto
+}
+
 nav a {
     display: block;
     color: #fff;
@@ -31,6 +35,8 @@ p {
     padding: 1rem;
     background-color: #bed;
     max-width: 400px;
+    display: flex;
+
 }
 
 #devtools-btn {

@@ -109,7 +109,11 @@ h1 {
     text-align: left;
     opacity: 0.8;
     background-color: var(--secondary-color);
-    color: #1120ef;
+}
+
+.hero article p {
+    color: #040e66;
+    opacity: 3;
 }
 
 .hero article img {

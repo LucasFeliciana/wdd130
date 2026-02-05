@@ -9,7 +9,7 @@ main {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #696969c2;
+    background-color: #363636c2;
     color: #fff;
 }
 
@@ -41,7 +41,7 @@ button {
 
 code {
     display: block;
-    background-color: #3b3b3b;
+    background-color: #202020;
     color: #fff;
 }
 

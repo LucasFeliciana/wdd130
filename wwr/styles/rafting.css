@@ -115,7 +115,7 @@ article {
 
 .hero article p {
     color: #040e66;
-    opacity: 3;
+    opacity: 4;
 }
 
 .hero article img {
@@ -280,6 +280,7 @@ footer p {
 .message-purpose p {
     margin: 0;
     font-weight: 600;
+    grid-row: 2;
 }
 
 .message-purpose label {
@@ -292,10 +293,6 @@ footer p {
 .message-purpose label:nth-of-type(2),
 .message-purpose label:nth-of-type(3) {
     grid-column: 2;
-}
-
-.message-purpose p {
-    grid-row: 2;
 }
 
 .contact-form button[type="submit"] {

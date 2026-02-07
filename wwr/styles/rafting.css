@@ -89,15 +89,17 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 5px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
+    top: 10px;
+    left: 0;
+    margin: 0;
     opacity: 0.8;
     background-color: var(--accent-color);
     color: #e5dd46;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
 }
 
 .hero article {
@@ -130,7 +132,7 @@ h1 {
     padding: 0 20px;
 }
 
-h2 {
+.history h2 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 2rem;
@@ -220,4 +222,119 @@ footer p {
     width: 40px;
     height: 40px;
     object-fit: contain;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-header p {
+    margin: 0.25rem 0;
+    padding: 0%;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 16px;
+    align-items: start;
+}
+
+.map iframe {
+    width: 100%;
+    height: 320px;
+    border: 0;
+    display: block;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 14px;
+}
+
+.contact-form .form-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    /* label | input */
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    font: inherit;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.message-purpose {
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+}
+
+.message-purpose p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.message-purpose label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.message-purpose label:nth-of-type(1),
+.message-purpose label:nth-of-type(2),
+.message-purpose label:nth-of-type(3) {
+    grid-column: 2;
+}
+
+.message-purpose p {
+    grid-row: 2;
+}
+
+.contact-form button[type="submit"] {
+    justify-self: stretch;
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background: #eee;
+    font: inherit;
+    cursor: pointer;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 16px;
+}
+
+.employees figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.employees h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 260px;
+    display: block;
+    border-radius: 6px;
+}
+
+.employees {
+    border: 1px solid #999;
+    padding: 16px;
+    margin: 24px 16px;
 }

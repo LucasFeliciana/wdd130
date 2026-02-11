@@ -79,17 +79,17 @@ article {
     padding: 8px;
 }
 
-.hero {
+.hero-about {
     position: relative;
 }
 
-.hero img {
+.hero-about img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
+.hero-about h1 {
     position: absolute;
     top: 10px;
     left: 0;
@@ -102,7 +102,7 @@ article {
     z-index: 2;
 }
 
-.hero article {
+.hero-about article {
     position: absolute;
     bottom: 5px;
     left: 1px;
@@ -113,12 +113,12 @@ article {
     background-color: var(--secondary-color);
 }
 
-.hero article p {
+.hero-about article p {
     color: #040e66;
     opacity: 4;
 }
 
-.hero article img {
+.hero-about article img {
     float: right;
     width: 125px;
     height: 125px;
@@ -224,6 +224,7 @@ footer p {
     object-fit: contain;
 }
 
+/* contact html css */
 .contact-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -334,4 +335,109 @@ footer p {
     border: 1px solid #999;
     padding: 16px;
     margin: 24px 16px;
+}
+
+/* HOME PAGE*/
+.hero {
+    position: relative;
+    width: 100%;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    margin: 0;
+    padding: 0.6rem 1rem;
+    background: rgb(0 0 0 / 70%);
+    color: #fff;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero-text {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    max-width: 36ch;
+    background: rgba(4, 105, 21, 0.747);
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    border: 2px solid rgb(4, 105, 21);
+    background: rgb(4, 105, 21);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.btn:hover {
+    filter: brightness(1.75);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #0a4d68;
+}
+
+.hero .btn {
+    position: absolute;
+    top: 87%;
+    left: 4%;
+}
+
+/* ===== HOME 2-COLUMN SECTION ===== */
+.home-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 0 1rem;
+}
+
+.cta-card,
+.newsletter {
+    border: 1px solid rgb(0 0 0 / 12%);
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    background: #fff;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+}
+
+/* ===== HOME GRID (2 columns) ===== */
+
+.home .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.home .hero img {
+    width: 100%;
+    display: block;
 }

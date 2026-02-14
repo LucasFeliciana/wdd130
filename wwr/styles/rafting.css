@@ -346,34 +346,34 @@ footer p {
 /* HOME PAGE*/
 @media (max-width: 700px) {
 
-    /* dá altura pro hero no celular (porque height:auto deixa ele pequeno) */
+    /* dá altura fixa pro hero no mobile */
     .hero img {
-        height: 320px;
+        height: 340px;
         object-fit: cover;
         object-position: center;
     }
 
-    /* título menor e ainda centralizado */
+    /* título menor */
     .hero h1 {
         font-size: 1.6rem;
         padding: 0.4rem 0.6rem;
     }
 
-    /* texto menor e sobe um pouco */
+    /* move o texto pra cima e menor */
     .hero-text {
-        top: 55%;
+        top: 50%;
         left: 4%;
         right: 4%;
         font-size: 1rem;
         max-width: none;
     }
 
-    /* botão menor e sobe (sem mudar desktop) */
+    /* move o botão pra cima */
     .hero .btn {
-        top: 75%;
+        top: 70%;
         left: 4%;
         font-size: 1.1rem;
-        padding: 0.5rem 0.8rem;
+        padding: 0.55rem 0.9rem;
     }
 }
 
@@ -425,7 +425,7 @@ footer p {
     background: rgb(4, 105, 21);
     color: #fff;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 1.1rem;
 }
 
 .btn:hover {

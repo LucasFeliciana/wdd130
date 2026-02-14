@@ -344,6 +344,39 @@ footer p {
 }
 
 /* HOME PAGE*/
+@media (max-width: 700px) {
+
+    /* dá altura pro hero no celular (porque height:auto deixa ele pequeno) */
+    .hero img {
+        height: 320px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* título menor e ainda centralizado */
+    .hero h1 {
+        font-size: 1.6rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    /* texto menor e sobe um pouco */
+    .hero-text {
+        top: 55%;
+        left: 4%;
+        right: 4%;
+        font-size: 1rem;
+        max-width: none;
+    }
+
+    /* botão menor e sobe (sem mudar desktop) */
+    .hero .btn {
+        top: 75%;
+        left: 4%;
+        font-size: 1.1rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
 .hero {
     position: relative;
     width: 100%;

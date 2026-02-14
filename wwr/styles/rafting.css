@@ -513,9 +513,7 @@ footer p {
     width: 1000px;
     margin: 0 auto;
     padding: 20px 16px;
-}
-
-.trips-cta {
+    text-align: center;
     text-align: center;
 }
 

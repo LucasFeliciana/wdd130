@@ -515,6 +515,19 @@ footer p {
     padding: 20px 16px;
 }
 
+.trips-cta {
+    text-align: center;
+}
+
+.trips-cta .btn {
+    background-color: #0e3417b7;
+    font-size: 1.5rem;
+}
+
+.trips-cta p {
+    font-size: 1.3rem;
+}
+
 .trip-cards {
     width: 1000px;
     margin: 0 auto;
@@ -525,7 +538,7 @@ footer p {
 }
 
 .trip-card {
-    border: 1px solid rgb(0 0 0 / 15%);
+    border: 1px solid rgb(14 52 23/ 0.30);
     border-radius: 12px;
     overflow: hidden;
     background: #fff;
@@ -540,9 +553,13 @@ footer p {
 }
 
 .trip-card h2,
-.trip-card p,
 .trip-card ul {
     padding: 0 14px;
+
+}
+
+.trip-card h2 {
+    text-align: center;
 }
 
 .trips-table {
@@ -551,8 +568,18 @@ footer p {
     padding: 0 16px;
 }
 
+.trips-table h2 {
+    text-align: center;
+    color: #0e3417b7;
+}
+
 .table-wrap {
     overflow-x: auto;
+}
+
+.table-wrap caption {
+    font-size: 1.3rem;
+    padding: 5px;
 }
 
 .trips-table table {

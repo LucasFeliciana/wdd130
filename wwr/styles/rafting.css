@@ -344,79 +344,82 @@ footer p {
 }
 
 /* HOME PAGE*/
-@media (max-width: 700px) {
-
-    /* dá altura fixa pro hero no mobile */
-    .hero img {
-        height: 340px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    /* título menor */
-    .hero h1 {
-        font-size: 1.6rem;
-        padding: 0.4rem 0.6rem;
-    }
-
-    /* move o texto pra cima e menor */
-    .hero-text {
-        top: 50%;
-        left: 4%;
-        right: 4%;
-        font-size: 1rem;
-        max-width: none;
-    }
-
-    /* move o botão pra cima */
-    .hero .btn {
-        top: 70%;
-        left: 4%;
-        font-size: 1.1rem;
-        padding: 0.55rem 0.9rem;
-    }
-}
+/* HOME PAGE - VERSÃO RESPONSIVA SEM MEDIA QUERY */
 
 .hero {
     position: relative;
     width: 100%;
-
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    min-height: 300px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Muda para space-between */
+    align-items: flex-start;
+    /* Alinha tudo à esquerda */
+    padding: 2rem 1rem;
+    /* Aumenta padding top/bottom */
 }
 
 .hero h1 {
-    position: absolute;
-    top: 5%;
-    left: 0;
     margin: 0;
+    /* Remove margem inferior */
     padding: 0.6rem 1rem;
     background: rgb(0 0 0 / 70%);
     color: #fff;
     border-radius: 0.5rem;
-    width: 100%;
+    width: auto;
+    max-width: 90%;
+    font-size: clamp(1.6rem, 5vw, 3rem);
     text-align: center;
-    font-size: 3rem;
+    align-self: center;
+    /* Centraliza apenas o h1 horizontalmente */
+}
+
+/* Container para agrupar texto e botão na esquerda */
+.hero-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Garante alinhamento à esquerda */
+    gap: 1rem;
+    /* Espaço entre texto e botão */
+    width: 100%;
+    max-width: 36ch;
+    /* Limita a largura do container */
 }
 
 .hero-text {
-    position: absolute;
-    top: 70%;
-    left: 3%;
-    max-width: 36ch;
-    background: rgba(4, 105, 21, 0.747);
+    background: rgba(4, 105, 21, 0.8);
     color: #fff;
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
-    font-size: 2rem;
-    opacity: 1;
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 0;
+    /* Remove margens */
+    width: fit-content;
+    /* Largura se ajusta ao conteúdo */
+    max-width: 100%;
+    /* Não ultrapassa o container */
 }
 
-.btn {
+.hero .btn {
     display: inline-block;
     padding: 0.7rem 1rem;
     border-radius: 0.6rem;
@@ -425,9 +428,12 @@ footer p {
     background: rgb(4, 105, 21);
     color: #fff;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    width: fit-content;
+    /* Botão se ajusta ao conteúdo */
 }
 
+/* Mantém o hover */
 .btn:hover {
     filter: brightness(1.75);
 }
@@ -435,12 +441,6 @@ footer p {
 .btn-outline {
     background: transparent;
     color: #0a4d68;
-}
-
-.hero .btn {
-    position: absolute;
-    top: 87%;
-    left: 4%;
 }
 
 /* ===== HOME 2-COLUMN SECTION ===== */
